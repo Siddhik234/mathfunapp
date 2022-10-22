@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Card,CardContent,Typography } from '@mui/material';
+import { Home } from './components/Home';
+import "./components/common.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Card>
+    <CardContent>
+        <Typography variant='h3'  component="h2">Math Fun App </Typography>
+        <Home/>
+    </CardContent>
+   </Card>
   );
 }
 
