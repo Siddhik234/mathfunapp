@@ -2,7 +2,6 @@ import React from "react";
 import {Card,CardContent,Typography} from "@mui/material";
  import {Table2} from "./Tables/Table2"
 import { Dyntable } from "./Tables/Dyntable";
-import { StudentsCards } from "./Geo/StudentsCards";
 
 
 export const Table=()=>{
@@ -10,7 +9,6 @@ export const Table=()=>{
         <Card sx={{bgcolor: "aqua"}}>
            <CardContent>
                <Typography variant="h4" > Tables </Typography>
-               <StudentsCards/>
                <Dyntable/>
                {/* <Table2/> */}
              </CardContent>

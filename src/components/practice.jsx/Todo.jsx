@@ -17,9 +17,10 @@ export const Todo=()=>{
             <input type="text" onChange={(e)=>setText(e.target.value)} />
             <button onClick={handleAdd}>Add</button>
             {
-                list.map((item)=>{
+                list.map((item,i)=>{
                     return(
                         <div>
+                            <h1> {i + 1} </h1>
                             <h1> {item} </h1>
                             <button onClick={(e)=>handleDelete(item)} >Delete</button>
 

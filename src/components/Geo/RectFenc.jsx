@@ -18,7 +18,7 @@ export const RectFenc=()=>{
     const handleCalculate=()=>{
       const par= Number(l) + Number(b) + Number(l) + Number(b)
       const totalwire= par * layer
-      const Totalcost= totalwire *pfc
+      const Totalcost= totalwire * pfc
        setCal(Totalcost)
     }
     return(
@@ -49,7 +49,7 @@ export const RectFenc=()=>{
           <TextField type="number" onFocus={()=>setPfc("")} variant="outlined" label="per Foot cost" value={pfc} onChange={e=>setPfc(e.target.value)} />
           </Grid>
           <Grid item xs={3}>
-        <Button disabled={l<5 || b <5 || l*b <1000 || (layer<1 && layer >12) || pfc<1 } variant="contained" onClick={handleCalculate} >Calculate </Button>
+        <Button disabled={l<5 || b <5  || (layer <1 && layer >12) || pfc<1 } variant="contained" onClick={handleCalculate} >Calculate </Button>
           </Grid>
           <Grid item xs={3}>
         <Button  variant="contained" onClick={handleClear}>clear</Button>

@@ -8,7 +8,7 @@ export const Prac=()=>{
         <React.Fragment>
             <Wishlist/>
             {/* <Counter/> */}
-            {/* <Todo/> */}
+            <Todo/>
         </React.Fragment>
     )
 }
